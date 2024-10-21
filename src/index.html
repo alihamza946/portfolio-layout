@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Layout</title>
     <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
-<body class="font-sans bg-gray-100">
-    <header class="bg-gray-800 text-white p-5">
+<body class="font-sans bg-white">
+    <header class="bg-red-600 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl font-bold">My Portfolio</h1>
-            <nav>
+            <nav class="bg-red-600">
                 <ul class="flex space-x-6">
                     <li><a href="#about" class="hover:text-gray-400">About</a></li>
                     <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
@@ -19,46 +21,75 @@
             </nav>
         </div>
     </header>
-    <section id="about" class="bg-white py-20">
+    <section id="about" class="bg-gray-600 py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">About Me</h2>
-            <p class="text-gray-700 max-w-xl mx-auto">
-                I am a passionate developer with skills in modern web technologies. I love to create web solutions that solve real-world problems.
+            <h2 class="text-4xl font-bold mb-6">Hey I am Ali Hamza</h2>
+            <p class="text-red-600 max-w-xl mx-auto">
+                I am a passionate web developer
             </p>
         </div>
     </section>
-        <section id="projects" class="bg-gray-200 py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-6">My Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="bg-white p-6 shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">Project One</h3>
-                        <p class="text-gray-600">A brief description of the project.</p>
-                    </div>
-                    <div class="bg-white p-6 shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">Project Two</h3>
-                        <p class="text-gray-600">A brief description of the project.</p>
-                    </div>
-                    <div class="bg-white p-6 shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">Project Three</h3>
-                        <p class="text-gray-600">A brief description of the project.</p>
-                    </div>
+            <!-- Projects Section -->
+    <section id="projects" class="bg-gray-900 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 shadow-lg">
+                    <img src="tribute.png" alt="Tribute Page" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="text-red-500"> Tribute Page </a>
                 </div>
-            </div>
-        </section>
-            <!-- Contact Section -->
-    <section id="contact" class="bg-white py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
-            <p class="text-gray-700 max-w-xl mx-auto mb-8">
-                Feel free to reach out to me through the following platforms.
-            </p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-800 hover:text-blue-500">LinkedIn</a>
-                <a href="#" class="text-gray-800 hover:text-blue-500">GitHub</a>
-                <a href="#" class="text-gray-800 hover:text-blue-500">Email</a>
+                <!-- Project 2 -->
+                <div class="bg-white p-6 shadow-lg">
+                    <img src="quote.png" alt="Random Quote Machine" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" class="text-red-500">Random Quote Machine</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white p-6 shadow-lg">
+                    <img src="calculator.png" alt="JavaScript Calculator" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" class="text-red-500">JavaScript Calculator</a>
+                </div>
+                 <!-- Project 4 -->
+                 <div class="bg-white p-6 shadow-lg">
+                    <img src="world.png" alt="Map Data Across the Globe" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/mVEJag" class="text-red-500">Map Data Across Globe</a>
+                </div>
+                 <!-- Project 5 -->
+                 <div class="bg-white p-6 shadow-lg">
+                    <img src="wikipedia.png" alt="Wikipedia Viewer" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/wGqEga" class="text-red-500">Wikipedia Viewer</a>
+                </div>
+                 <!-- Project 6 -->
+                 <div class="bg-white p-6 shadow-lg">
+                    <img src="tik-tak-toe.png" alt="Tik-Tac-Toe Game" class="w-full h-48 object-cover mb-4">
+                    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" class="text-red-500">Tik-Tac-Toe Game</a>
+                </div>
+                <div class="mt-10 flex justify-center w-full">
+                    <button onclick="window.open('https://codepen.io/FreeCodeCamp/', '_blank')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
+                        Show All
+                    </button>
+                </div>
+                
             </div>
         </div>
     </section>
+
+               <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-6">Let's work together...</h2>
+            <p class="text-gray-400 mb-10 italic">How do you take your coffee?</p>
+            <div class="flex justify-center space-x-6 text-white text-2xl">
+                <a href="https://www.facebook.com/freecodecamp" class="hover:text-blue-500"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://github.com/freecodecamp" class="hover:text-blue-500"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://x.com/freecodecamp" class="hover:text-blue-500"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="example@example.com" class="hover:text-blue-500"><i class="fas fa-envelope"></i> Send a mail</a>
+                <a href="tel:555-555-5555" class="hover:text-blue-500"><i class="fas fa-phone"></i> Call me</a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-center text-white py-4">
+        <p>This is a fake portfolio website.</p>
+    </footer>
 </body>
 </html>
